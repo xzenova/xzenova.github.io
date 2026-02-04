@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colour Prediction Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Colour Prediction (Demo)</h2>
+  <p class="note">Demo version · No real money</p>
+
+  <div class="top">
+    <div>Coins: <span id="coins">1000</span></div>
+    <div>Time: <span id="time">30</span>s</div>
+  </div>
+
+  <div class="rounds">
+    <button onclick="setRound(30)">30s</button>
+    <button onclick="setRound(60)">1 Min</button>
+    <button onclick="setRound(180)">3 Min</button>
+    <button onclick="setRound(300)">5 Min</button>
+  </div>
+
+  <div class="colors">
+    <button class="red" onclick="selectColor('red')">RED</button>
+    <button class="green" onclick="selectColor('green')">GREEN</button>
+    <button class="blue" onclick="selectColor('blue')">BLUE</button>
+  </div>
+
+  <div id="status">Choose a colour</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
